@@ -1,0 +1,168 @@
+<svg viewBox="0 0 580 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="s1"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#00000022"/></filter>
+  </defs>
+
+  <!-- GEAR bottom center -->
+  <g transform="translate(198,448)" opacity="0.28">
+    <circle r="42" stroke="#9E9E9E" stroke-width="5" fill="none"/>
+    <circle r="15" stroke="#9E9E9E" stroke-width="5" fill="none"/>
+    <rect x="-7" y="-52" width="14" height="16" rx="3" fill="#9E9E9E"/>
+    <rect x="-7" y="-52" width="14" height="16" rx="3" fill="#9E9E9E" transform="rotate(45)"/>
+    <rect x="-7" y="-52" width="14" height="16" rx="3" fill="#9E9E9E" transform="rotate(90)"/>
+    <rect x="-7" y="-52" width="14" height="16" rx="3" fill="#9E9E9E" transform="rotate(135)"/>
+    <rect x="-7" y="-52" width="14" height="16" rx="3" fill="#9E9E9E" transform="rotate(180)"/>
+    <rect x="-7" y="-52" width="14" height="16" rx="3" fill="#9E9E9E" transform="rotate(225)"/>
+    <rect x="-7" y="-52" width="14" height="16" rx="3" fill="#9E9E9E" transform="rotate(270)"/>
+    <rect x="-7" y="-52" width="14" height="16" rx="3" fill="#9E9E9E" transform="rotate(315)"/>
+  </g>
+
+  <!-- MAIN MONITOR bezel -->
+  <rect x="22" y="24" width="340" height="272" rx="16" fill="#37474F" filter="url(#s1)"/>
+  <!-- screen bg -->
+  <rect x="36" y="38" width="312" height="244" rx="10" fill="#F0F4F0"/>
+  <!-- browser top bar green -->
+  <rect x="36" y="38" width="312" height="32" rx="10" fill="#43A047"/>
+  <rect x="36" y="56" width="312" height="14" fill="#43A047"/>
+  <!-- dots -->
+  <circle cx="56" cy="54" r="5" fill="#fff" opacity="0.45"/>
+  <circle cx="72" cy="54" r="5" fill="#fff" opacity="0.45"/>
+  <circle cx="88" cy="54" r="5" fill="#fff" opacity="0.45"/>
+  <!-- url bar -->
+  <rect x="104" y="46" width="190" height="16" rx="8" fill="#2E7D32" opacity="0.5"/>
+
+  <!-- FLOWCHART on screen -->
+  <!-- oval top -->
+  <ellipse cx="200" cy="98" rx="32" ry="14" fill="#66BB6A" opacity="0.85"/>
+  <!-- arrow down -->
+  <line x1="200" y1="112" x2="200" y2="128" stroke="#43A047" stroke-width="2"/>
+  <polygon points="196,126 200,134 204,126" fill="#43A047"/>
+  <!-- diamond -->
+  <polygon points="200,134 226,152 200,170 174,152" fill="#37474F" opacity="0.8"/>
+  <!-- left arrow -->
+  <line x1="174" y1="152" x2="146" y2="152" stroke="#43A047" stroke-width="2"/>
+  <polygon points="148,148 140,152 148,156" fill="#43A047"/>
+  <!-- right arrow -->
+  <line x1="226" y1="152" x2="254" y2="152" stroke="#43A047" stroke-width="2"/>
+  <polygon points="252,148 260,152 252,156" fill="#43A047"/>
+  <!-- left box -->
+  <rect x="116" y="140" width="30" height="24" rx="4" fill="#A5D6A7"/>
+  <!-- right box -->
+  <rect x="254" y="140" width="30" height="24" rx="4" fill="#A5D6A7"/>
+  <!-- arrows down left/right -->
+  <line x1="131" y1="164" x2="131" y2="180" stroke="#43A047" stroke-width="2"/>
+  <polygon points="127,178 131,186 135,178" fill="#43A047"/>
+  <line x1="269" y1="164" x2="269" y2="180" stroke="#43A047" stroke-width="2"/>
+  <polygon points="265,178 269,186 273,178" fill="#43A047"/>
+  <!-- bottom row -->
+  <rect x="108" y="186" width="36" height="22" rx="4" fill="#C8E6C9"/>
+  <rect x="154" y="186" width="36" height="22" rx="4" fill="#A5D6A7"/>
+  <rect x="200" y="186" width="36" height="22" rx="4" fill="#C8E6C9"/>
+  <rect x="246" y="186" width="36" height="22" rx="4" fill="#A5D6A7"/>
+  <!-- connect -->
+  <line x1="126" y1="186" x2="172" y2="186" stroke="#43A047" stroke-width="1.5"/>
+  <line x1="236" y1="197" x2="218" y2="197" stroke="#43A047" stroke-width="1.5"/>
+  <!-- oval bottom -->
+  <ellipse cx="200" cy="228" rx="32" ry="14" fill="#66BB6A" opacity="0.8"/>
+
+  <!-- SECOND CODE WINDOW overlapping -->
+  <rect x="242" y="52" width="190" height="228" rx="12" fill="#263238" filter="url(#s1)"/>
+  <!-- dots -->
+  <circle cx="262" cy="68" r="4" fill="#546E7A"/>
+  <circle cx="276" cy="68" r="4" fill="#546E7A"/>
+  <circle cx="290" cy="68" r="4" fill="#546E7A"/>
+  <!-- header tag -->
+  <rect x="254" y="58" width="60" height="16" rx="5" fill="#2E7D32" opacity="0.7"/>
+  <text x="284" y="70" text-anchor="middle" font-size="8" fill="#A5D6A7" font-family="monospace">&lt;/&gt; ...</text>
+  <!-- code lines -->
+  <rect x="254" y="82" width="88" height="7" rx="3" fill="#4CAF50" opacity="0.75"/>
+  <rect x="254" y="94" width="60" height="7" rx="3" fill="#fff" opacity="0.12"/>
+  <rect x="254" y="106" width="76" height="7" rx="3" fill="#4CAF50" opacity="0.5"/>
+  <rect x="254" y="118" width="50" height="7" rx="3" fill="#fff" opacity="0.12"/>
+  <rect x="254" y="130" width="95" height="7" rx="3" fill="#4CAF50" opacity="0.7"/>
+  <rect x="254" y="142" width="65" height="7" rx="3" fill="#fff" opacity="0.12"/>
+  <rect x="254" y="154" width="80" height="7" rx="3" fill="#4CAF50" opacity="0.45"/>
+  <rect x="254" y="166" width="55" height="7" rx="3" fill="#fff" opacity="0.12"/>
+  <rect x="254" y="178" width="90" height="7" rx="3" fill="#4CAF50" opacity="0.65"/>
+  <rect x="254" y="190" width="45" height="7" rx="3" fill="#fff" opacity="0.12"/>
+  <rect x="254" y="202" width="72" height="7" rx="3" fill="#4CAF50" opacity="0.55"/>
+  <rect x="254" y="214" width="58" height="7" rx="3" fill="#fff" opacity="0.12"/>
+  <rect x="254" y="226" width="85" height="7" rx="3" fill="#4CAF50" opacity="0.6"/>
+  <rect x="254" y="238" width="48" height="7" rx="3" fill="#fff" opacity="0.12"/>
+  <rect x="254" y="250" width="78" height="7" rx="3" fill="#4CAF50" opacity="0.5"/>
+
+  <!-- LEFT SIDEBAR CHIPS -->
+  <rect x="0" y="116" width="58" height="22" rx="5" fill="#388E3C"/>
+  <text x="29" y="131" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="monospace">CSS</text>
+  <rect x="0" y="146" width="58" height="22" rx="5" fill="#388E3C"/>
+  <text x="29" y="161" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="monospace">HTML</text>
+  <rect x="0" y="176" width="58" height="22" rx="5" fill="#388E3C"/>
+  <text x="29" y="191" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="monospace">C++</text>
+  <!-- big code chip -->
+  <rect x="0" y="208" width="58" height="52" rx="8" fill="#2E7D32"/>
+  <text x="29" y="241" text-anchor="middle" font-size="20" fill="#fff" font-weight="900" font-family="monospace">&lt;/&gt;</text>
+
+  <!-- MONITOR STAND -->
+  <rect x="176" y="296" width="18" height="34" rx="4" fill="#455A64"/>
+  <rect x="150" y="328" width="70" height="11" rx="5" fill="#37474F"/>
+
+  <!-- X ICON floating -->
+  <rect x="442" y="22" width="50" height="50" rx="11" fill="#455A64" filter="url(#s1)"/>
+  <line x1="457" y1="37" x2="477" y2="57" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="477" y1="37" x2="457" y2="57" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- DEVELOPER PERSON -->
+  <!-- ground shadow -->
+  <ellipse cx="460" cy="468" rx="58" ry="11" fill="#C8E6C9" opacity="0.5"/>
+  <!-- legs -->
+  <path d="M440 378 Q434 420 426 450" stroke="#455A64" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M478 378 Q484 420 490 450" stroke="#37474F" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- shoes -->
+  <ellipse cx="422" cy="453" rx="24" ry="10" fill="#212121"/>
+  <ellipse cx="493" cy="453" rx="24" ry="10" fill="#263238"/>
+  <!-- torso green -->
+  <rect x="424" y="274" width="78" height="112" rx="22" fill="#43A047"/>
+  <!-- dark sleeves -->
+  <rect x="424" y="274" width="18" height="60" rx="12" fill="#37474F"/>
+  <rect x="484" y="274" width="18" height="60" rx="12" fill="#37474F"/>
+  <!-- backpack -->
+  <rect x="494" y="282" width="28" height="56" rx="11" fill="#2E7D32"/>
+  <rect x="497" y="288" width="22" height="44" rx="9" fill="#388E3C"/>
+
+  <!-- left arm holds laptop -->
+  <path d="M424 304 Q402 322 398 350" stroke="#FFCC80" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- laptop body -->
+  <rect x="360" y="338" width="90" height="58" rx="7" fill="#37474F" filter="url(#s1)"/>
+  <rect x="366" y="344" width="78" height="44" rx="5" fill="#43A047" opacity="0.2"/>
+  <!-- laptop code lines -->
+  <rect x="370" y="350" width="44" height="6" rx="3" fill="#4CAF50" opacity="0.85"/>
+  <rect x="370" y="360" width="32" height="5" rx="2" fill="#4CAF50" opacity="0.5"/>
+  <rect x="370" y="369" width="40" height="5" rx="2" fill="#4CAF50" opacity="0.65"/>
+  <!-- laptop hinge -->
+  <rect x="352" y="394" width="106" height="7" rx="3" fill="#546E7A"/>
+
+  <!-- right arm thumbs up -->
+  <path d="M502 292 Q522 272 528 250" stroke="#FFCC80" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- thumb up hand -->
+  <ellipse cx="531" cy="243" rx="13" ry="15" fill="#FFCC80"/>
+  <rect x="524" y="226" width="12" height="20" rx="6" fill="#FFCC80"/>
+  <!-- fingers curl -->
+  <path d="M524 240 Q518 244 520 252 Q524 256 530 254" stroke="#F0A050" stroke-width="2" fill="none"/>
+
+  <!-- neck -->
+  <rect x="447" y="260" width="24" height="20" rx="7" fill="#FFCC80"/>
+  <!-- head -->
+  <ellipse cx="459" cy="238" rx="28" ry="30" fill="#FFCC80"/>
+  <!-- hair dark -->
+  <path d="M431 226 Q433 194 459 192 Q485 194 487 226 Q480 206 459 204 Q438 206 431 226Z" fill="#263238"/>
+  <!-- ear -->
+  <ellipse cx="431" cy="240" rx="5" ry="8" fill="#F0A050"/>
+  <!-- eyes -->
+  <ellipse cx="450" cy="237" rx="3.5" ry="4" fill="#263238"/>
+  <ellipse cx="467" cy="237" rx="3.5" ry="4" fill="#263238"/>
+  <!-- eye shine -->
+  <circle cx="452" cy="235" r="1.5" fill="#fff"/>
+  <circle cx="469" cy="235" r="1.5" fill="#fff"/>
+  <!-- smile -->
+  <path d="M452 250 Q459 257 466 250" stroke="#263238" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

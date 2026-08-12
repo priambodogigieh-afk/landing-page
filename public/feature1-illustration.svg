@@ -1,0 +1,133 @@
+<svg viewBox="0 0 500 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="f1"><feDropShadow dx="0" dy="5" stdDeviation="9" flood-color="#00000016"/></filter>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="250" cy="416" rx="192" ry="14" fill="#A5D6A7" opacity="0.4"/>
+
+  <!-- LARGE PHONE -->
+  <rect x="146" y="18" width="200" height="356" rx="26" fill="#2E7D32" filter="url(#f1)"/>
+  <!-- top notch -->
+  <rect x="218" y="24" width="54" height="9" rx="4" fill="#1B5E20"/>
+  <!-- inner screen tint -->
+  <rect x="157" y="36" width="178" height="328" rx="18" fill="#4CAF50" opacity="0.5"/>
+
+  <!-- avatar area -->
+  <circle cx="246" cy="112" r="48" fill="#fff" opacity="0.1"/>
+  <circle cx="246" cy="106" r="33" fill="#fff" opacity="0.92"/>
+  <circle cx="246" cy="97" r="13" fill="#2E7D32"/>
+  <path d="M221 130 Q223 115 246 115 Q269 115 271 130" fill="#2E7D32"/>
+  <!-- online dot -->
+  <circle cx="272" cy="83" r="11" fill="#66BB6A"/>
+  <circle cx="272" cy="83" r="5.5" fill="#fff"/>
+
+  <!-- label bar 1 -->
+  <rect x="170" y="164" width="90" height="12" rx="6" fill="#fff" opacity="0.75"/>
+  <!-- input 1 -->
+  <rect x="170" y="182" width="154" height="34" rx="10" fill="#fff" opacity="0.96"/>
+  <circle cx="189" cy="199" r="6" fill="#263238"/>
+  <circle cx="209" cy="199" r="6" fill="#263238"/>
+  <circle cx="229" cy="199" r="6" fill="#263238"/>
+  <circle cx="249" cy="199" r="6" fill="#263238"/>
+
+  <!-- label bar 2 -->
+  <rect x="170" y="224" width="66" height="12" rx="6" fill="#fff" opacity="0.75"/>
+  <!-- input 2 -->
+  <rect x="170" y="242" width="154" height="34" rx="10" fill="#fff" opacity="0.96"/>
+  <circle cx="189" cy="259" r="6" fill="#263238"/>
+  <circle cx="209" cy="259" r="6" fill="#263238"/>
+  <circle cx="229" cy="259" r="6" fill="#263238"/>
+  <circle cx="249" cy="259" r="6" fill="#263238"/>
+  <circle cx="269" cy="259" r="6" fill="#263238"/>
+  <circle cx="289" cy="259" r="6" fill="#263238"/>
+
+  <!-- submit button -->
+  <rect x="170" y="288" width="154" height="38" rx="11" fill="#fff" opacity="0.22"/>
+  <rect x="182" y="298" width="95" height="10" rx="5" fill="#fff" opacity="0.55"/>
+  <rect x="182" y="312" width="62" height="7" rx="3" fill="#fff" opacity="0.3"/>
+
+  <!-- WOMAN left sitting on stool -->
+  <!-- stool white legs -->
+  <line x1="85" y1="318" x2="68" y2="402" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="121" y1="318" x2="138" y2="402" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="68" y1="402" x2="138" y2="402" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="76" y1="360" x2="130" y2="360" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <!-- stool seat green -->
+  <rect x="66" y="305" width="74" height="15" rx="7" fill="#1B5E20"/>
+
+  <!-- lower legs dark green -->
+  <path d="M93 320 Q89 363 73 385" stroke="#1B5E20" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M113 320 Q118 365 136 387" stroke="#1B5E20" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- shoes -->
+  <ellipse cx="67" cy="389" rx="19" ry="8" fill="#1B5E20"/>
+  <ellipse cx="138" cy="390" rx="19" ry="8" fill="#1B5E20"/>
+
+  <!-- torso -->
+  <rect x="74" y="222" width="56" height="96" rx="19" fill="#43A047"/>
+  <!-- belt -->
+  <rect x="74" y="300" width="56" height="13" rx="6" fill="#2E7D32"/>
+
+  <!-- right arm pointing -->
+  <path d="M130 245 Q150 237 154 218" stroke="#C8956C" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <circle cx="155" cy="214" r="9" fill="#C8956C"/>
+  <rect x="151" y="200" width="8" height="16" rx="4" fill="#C8956C"/>
+
+  <!-- left arm -->
+  <path d="M74 245 Q57 258 55 274" stroke="#C8956C" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <circle cx="54" cy="277" r="9" fill="#C8956C"/>
+
+  <!-- neck -->
+  <rect x="89" y="208" width="23" height="18" rx="7" fill="#C8956C"/>
+  <!-- head -->
+  <ellipse cx="101" cy="190" rx="25" ry="27" fill="#C8956C"/>
+  <!-- hair bob dark -->
+  <path d="M76 183 Q78 155 101 153 Q124 155 126 183 Q120 162 101 161 Q82 162 76 183Z" fill="#212121"/>
+  <path d="M76 183 Q70 197 74 212 Q79 197 85 190Z" fill="#212121"/>
+  <path d="M126 183 Q132 197 128 212 Q123 197 117 190Z" fill="#212121"/>
+  <!-- eyes -->
+  <ellipse cx="93" cy="190" rx="3" ry="3.5" fill="#263238"/>
+  <ellipse cx="109" cy="190" rx="3" ry="3.5" fill="#263238"/>
+  <!-- smile -->
+  <path d="M95 201 Q101 207 107 201" stroke="#263238" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- ear -->
+  <ellipse cx="76" cy="192" rx="4" ry="6" fill="#B07848"/>
+
+  <!-- MAN right standing -->
+  <!-- legs -->
+  <path d="M336 342 Q332 382 322 408" stroke="#1B5E20" stroke-width="19" stroke-linecap="round" fill="none"/>
+  <path d="M365 342 Q369 382 377 408" stroke="#1B5E20" stroke-width="19" stroke-linecap="round" fill="none"/>
+  <!-- shoes -->
+  <ellipse cx="319" cy="410" rx="24" ry="10" fill="#212121"/>
+  <ellipse cx="379" cy="410" rx="24" ry="10" fill="#212121"/>
+
+  <!-- torso -->
+  <rect x="320" y="232" width="74" height="118" rx="22" fill="#43A047"/>
+  <!-- loading spinner on shirt -->
+  <path d="M357 272 A17 17 0 0 1 374 289" stroke="#2E7D32" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M340 289 A17 17 0 0 1 357 272" stroke="#2E7D32" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- left arm holds screen -->
+  <path d="M320 256 Q305 267 303 288" stroke="#C8956C" stroke-width="15" stroke-linecap="round" fill="none"/>
+  <circle cx="302" cy="291" r="10" fill="#C8956C"/>
+  <!-- right arm resting -->
+  <path d="M394 256 Q409 264 411 281" stroke="#C8956C" stroke-width="15" stroke-linecap="round" fill="none"/>
+  <circle cx="412" cy="284" r="10" fill="#C8956C"/>
+  <!-- watch -->
+  <rect x="404" y="277" width="17" height="12" rx="4" fill="#263238"/>
+  <rect x="406" y="279" width="13" height="8" rx="3" fill="#4CAF50"/>
+
+  <!-- neck -->
+  <rect x="335" y="218" width="25" height="18" rx="7" fill="#C8956C"/>
+  <!-- head -->
+  <ellipse cx="347" cy="197" rx="27" ry="29" fill="#C8956C"/>
+  <!-- hair -->
+  <path d="M320 186 Q322 156 347 154 Q372 156 374 186 Q367 165 347 163 Q327 165 320 186Z" fill="#212121"/>
+  <!-- eyes -->
+  <ellipse cx="339" cy="196" rx="3" ry="3.5" fill="#263238"/>
+  <ellipse cx="355" cy="196" rx="3" ry="3.5" fill="#263238"/>
+  <!-- smile -->
+  <path d="M341 208 Q347 214 353 208" stroke="#263238" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- ear -->
+  <ellipse cx="320" cy="199" rx="4" ry="6" fill="#B07848"/>
+</svg>
