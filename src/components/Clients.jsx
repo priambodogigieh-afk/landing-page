@@ -4,7 +4,7 @@ export default function Clients() {
     { name: 'Alien',     file: '/logo%20alien.png'   },
     { name: 'OJ',        file: '/oj.png'             },
     { name: 'Ipsum',     file: '/logo%20ipsum.png'   },
-    { name: 'Lingakran', file: '/logo_lingakran-removebg-preview.png' },
+    { name: 'Lingkaran', file: '/logo_lingakran-removebg-preview.png' },
     { name: 'VibedevAI', file: '/vibedevai_logo.jpeg' },
   ]
   return (
@@ -21,7 +21,7 @@ export default function Clients() {
               <img
                 src={c.file}
                 alt={c.name}
-                className={`client-logo-img${c.name === 'Lingakran' ? ' client-logo-lg' : ''}`}
+                className={`client-logo-img${c.name === 'Lingkaran' ? ' client-logo-lg' : ''}`}
                 loading="lazy"
               />
             </div>

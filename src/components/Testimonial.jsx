@@ -27,7 +27,7 @@ export default function Testimonial() {
               { name: 'Alien',     file: '/logo%20alien.png'   },
               { name: 'OJ',        file: '/oj.png'             },
               { name: 'Ipsum',     file: '/logo%20ipsum.png'   },
-              { name: 'Lingakran', file: '/logo_lingakran-removebg-preview.png' },
+              { name: 'Lingkaran', file: '/logo_lingakran-removebg-preview.png' },
               { name: 'VibedevAI', file: '/vibedevai_logo.jpeg' },
             ].map((b) => (
               <img key={b.name} src={b.file} alt={b.name} className="brand-logo-img" loading="lazy"/>
