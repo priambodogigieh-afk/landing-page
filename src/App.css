@@ -398,6 +398,7 @@ body {
   filter: grayscale(1);
   opacity: .55;
   transition: filter .25s, opacity .25s;
+  mix-blend-mode: multiply;
 }
 .client-logo-lg {
   height: 88px;
@@ -662,6 +663,7 @@ body {
   filter: grayscale(1);
   opacity: .55;
   transition: filter .25s, opacity .25s;
+  mix-blend-mode: multiply;
 }
 .brand-logo-img:hover {
   filter: grayscale(0);
