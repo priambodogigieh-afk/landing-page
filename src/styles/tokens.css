@@ -1,0 +1,54 @@
+:root {
+  --green: #4CAF50;
+  --green-dark: #388E3C;
+  --green-light: #E8F5E9;
+  --green-mid: #C8E6C9;
+
+  --text: #6B7280;
+  --text-head: #1C2B36;
+  --text-sub: #9CA3AF;
+  --text-white: #FFFFFF;
+
+  --bg: #FFFFFF;
+  --bg-alt: #F7F9FC;
+  --bg-card: #FFFFFF;
+  --border: #E5E7EB;
+
+  --navbar-bg: rgba(255, 255, 255, 0.85);
+  --footer-bg: #1C2B36;
+  --footer-text: #94A3B8;
+  --footer-border: #263445;
+
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.10);
+
+  --sp-1: 4px; --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+  --sp-9: 80px; --sp-10: 96px;
+
+  --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px; --radius-xl: 24px;
+
+  --max-w: 1140px;
+  --font: 'Outfit', 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s ease;
+  --focus-ring: 2px solid var(--green);
+  --focus-ring-offset: 2px;
+}
+
+[data-theme='dark'] {
+  --text: #94A3B8;
+  --text-head: #F8FAFC;
+  --text-sub: #64748B;
+  --bg: #0F172A;
+  --bg-alt: #1E293B;
+  --bg-card: #1E293B;
+  --border: #334155;
+  --navbar-bg: rgba(15, 23, 42, 0.85);
+  --green-light: rgba(76, 175, 80, 0.15);
+  --green-mid: rgba(76, 175, 80, 0.3);
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
