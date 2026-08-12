@@ -151,6 +151,12 @@ body {
   flex-shrink: 0;
 }
 
+.logo-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 .logo-text {
   font-size: 20px;
   font-weight: 700;

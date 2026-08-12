@@ -4,10 +4,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-brand">
           <div className="nav-logo">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                stroke="#4CAF50" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <img src="/image.png" alt="Nexcent Logo" className="logo-icon" />
             <span className="logo-text white">Nexcent</span>
           </div>
           <p className="footer-desc">
