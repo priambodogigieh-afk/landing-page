@@ -152,13 +152,13 @@ body {
 }
 
 .logo-icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
 }
 
 .logo-text {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--text-head);
   letter-spacing: -.4px;
