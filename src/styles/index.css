@@ -199,17 +199,25 @@ button { cursor: pointer; background: none; border: none; outline: none; }
 }
 .clients-logos {
   display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: nowrap; padding: 0 var(--sp-4);
+  flex-wrap: nowrap; padding: 0 var(--sp-2); gap: var(--sp-4);
 }
 .client-logo {
   display: flex; align-items: center; justify-content: center;
-  flex: 1; padding: var(--sp-5) var(--sp-6); transition: all .25s;
+  flex: 1; height: 50px; padding: 0 var(--sp-2); transition: transform .25s ease;
 }
+.client-logo:hover { transform: translateY(-2px); }
 .client-logo-img {
-  width: 120px; height: 60px; object-fit: contain;
-  display: block; filter: brightness(0); opacity: .75;
+  max-height: 38px; max-width: 110px; width: auto; height: auto;
+  object-fit: contain; display: block; filter: brightness(0); opacity: .75;
+  transition: opacity .2s ease;
 }
-[data-theme='dark'] .client-logo-img { filter: brightness(0) invert(1); opacity: .7; }
+.client-logo-img.logo-taizenai { max-height: 34px; }
+.client-logo-img.logo-alien { max-height: 34px; }
+.client-logo-img.logo-oj { max-height: 34px; }
+.client-logo-img.logo-ipsum { max-height: 36px; }
+.client-logo-img.logo-lingkaran { max-height: 36px; }
+.client-logo-img.logo-vibedevai { max-height: 32px; max-width: 120px; }
+.client-logo:hover .client-logo-img { opacity: 1; }
 
 /* ============================================================
    COMMUNITY
@@ -432,8 +440,8 @@ button { cursor: pointer; background: none; border: none; outline: none; }
 
   /* Clients */
   .clients-logos { gap: 0; flex-wrap: wrap; justify-content: center; }
-  .client-logo { flex: 0 0 33.333%; padding: var(--sp-4); }
-  .client-logo-img { width: 90px; height: 48px; }
+  .client-logo { flex: 0 0 33.333%; padding: var(--sp-3); height: 44px; }
+  .client-logo-img { max-height: 32px; max-width: 90px; }
 
   /* Community */
   .community-grid { grid-template-columns: 1fr 1fr; gap: var(--sp-5); }
@@ -484,8 +492,8 @@ button { cursor: pointer; background: none; border: none; outline: none; }
   .hero-svg { max-width: 340px; }
 
   /* Clients */
-  .client-logo { flex: 0 0 50%; }
-  .client-logo-img { width: 80px; height: 40px; }
+  .client-logo { flex: 0 0 50%; height: 40px; }
+  .client-logo-img { max-height: 28px; max-width: 80px; }
 
   /* Community */
   .community-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
@@ -523,8 +531,8 @@ button { cursor: pointer; background: none; border: none; outline: none; }
   .hero-svg { max-width: 280px; animation: none; }
 
   /* Clients */
-  .client-logo { flex: 0 0 50%; padding: var(--sp-3); }
-  .client-logo-img { width: 70px; height: 36px; }
+  .client-logo { flex: 0 0 50%; padding: var(--sp-2); height: 36px; }
+  .client-logo-img { max-height: 24px; max-width: 70px; }
 
   /* Community */
   .community-card { padding: var(--sp-5) var(--sp-4); }

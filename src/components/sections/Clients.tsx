@@ -23,7 +23,7 @@ export default function Clients() {
               <img
                 src={c.file}
                 alt={`${c.name} brand logo`}
-                className="client-logo-img"
+                className={`client-logo-img logo-${c.name.toLowerCase()}`}
                 loading="lazy"
               />
             </div>
