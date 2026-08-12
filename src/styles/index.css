@@ -281,13 +281,20 @@ button { cursor: pointer; background: none; border: none; outline: none; }
 .stat-card {
   padding: var(--sp-5); background: var(--bg-card); border-radius: var(--radius-md);
   border: 1px solid var(--border); border-left: 4px solid var(--green);
-  box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
-  gap: var(--sp-1); transition: box-shadow .2s, transform .2s;
+  box-shadow: var(--shadow-sm); display: flex; align-items: center;
+  gap: var(--sp-4); transition: box-shadow .2s, transform .2s;
 }
 .stat-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
-.stat-icon { font-size: 22px; margin-bottom: var(--sp-1); }
-.stat-value { font-size: 28px; font-weight: 800; color: var(--text-head); letter-spacing: -.5px; line-height: 1; }
-.stat-label { font-size: 13px; color: var(--text-sub); font-weight: 500; }
+.stat-icon-wrapper {
+  width: 48px; height: 48px; flex-shrink: 0; display: flex;
+  align-items: center; justify-content: center;
+}
+.stat-icon-img {
+  width: 40px; height: 40px; object-fit: contain; display: block;
+}
+.stat-info { display: flex; flex-direction: column; gap: 2px; }
+.stat-value { font-size: 28px; font-weight: 800; color: var(--text-head); letter-spacing: -.5px; line-height: 1.1; }
+.stat-label { font-size: 14px; color: var(--text-sub); font-weight: 500; }
 
 /* ============================================================
    TESTIMONIAL
