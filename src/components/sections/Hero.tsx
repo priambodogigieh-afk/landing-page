@@ -17,7 +17,7 @@ export default function Hero() {
         </div>
         <div className="hero-image">
           <img
-            src="/laptop-removebg-preview.png"
+            src="/Illustration.svg"
             alt="Developer working at a monitor with flowchart and code"
             className="hero-svg float-illustration"
             width="580"
