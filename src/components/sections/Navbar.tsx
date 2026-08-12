@@ -2,12 +2,7 @@ import { useEffect } from 'react';
 import useMobileMenu from '../../hooks/useMobileMenu';
 import Button from '../ui/Button';
 
-interface NavbarProps {
-  theme: 'light' | 'dark';
-  toggleTheme: () => void;
-}
-
-export default function Navbar({ theme, toggleTheme }: NavbarProps) {
+export default function Navbar() {
   const { isOpen, toggle, close } = useMobileMenu();
 
   useEffect(() => {
@@ -25,22 +20,6 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
     { label: 'FAQ', href: '#faq' },
   ];
 
-  const SunIcon = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="5"/>
-      <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-    </svg>
-  );
-
-  const MoonIcon = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-    </svg>
-  );
-
   return (
     <>
       <header className="navbar">
@@ -53,9 +32,6 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             {navLinks.map((link) => <a key={link.label} href={link.href}>{link.label}</a>)}
           </nav>
           <div className="nav-actions">
-            <button className="theme-toggle-btn" onClick={toggleTheme} aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>
-              {theme === 'light' ? <MoonIcon /> : <SunIcon />}
-            </button>
             <Button variant="ghost" as="a" href="#login" className="btn-login">Login</Button>
             <Button variant="primary" as="a" href="#signup" className="btn-signup">Sign up</Button>
           </div>
@@ -77,9 +53,6 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
               <img src="/image.png" alt="Nexcent Logo" className="logo-icon" />
               <span className="logo-text">Nexcent</span>
             </div>
-            <button className="theme-toggle-btn" onClick={toggleTheme} aria-label="Toggle theme">
-              {theme === 'light' ? <MoonIcon /> : <SunIcon />}
-            </button>
           </div>
           <nav className="mobile-drawer-links" aria-label="Mobile navigation">
             {navLinks.map((link) => <a key={link.label} href={link.href} onClick={close}>{link.label}</a>)}

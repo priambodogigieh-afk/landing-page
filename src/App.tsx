@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './styles/index.css';
 import Navbar from './components/sections/Navbar';
 import Hero from './components/sections/Hero';
@@ -9,14 +10,16 @@ import Testimonial from './components/sections/Testimonial';
 import Blog from './components/sections/Blog';
 import CTA from './components/sections/CTA';
 import Footer from './components/sections/Footer';
-import useDarkMode from './hooks/useDarkMode';
 
 export default function App() {
-  const { theme, toggleTheme } = useDarkMode();
+  useEffect(() => {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.removeItem('theme');
+  }, []);
 
   return (
     <>
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
+      <Navbar />
       <main>
         <Hero />
         <Clients />

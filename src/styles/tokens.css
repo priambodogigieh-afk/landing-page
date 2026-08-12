@@ -37,18 +37,4 @@
   --focus-ring-offset: 2px;
 }
 
-[data-theme='dark'] {
-  --text: #94A3B8;
-  --text-head: #F8FAFC;
-  --text-sub: #64748B;
-  --bg: #0F172A;
-  --bg-alt: #1E293B;
-  --bg-card: #1E293B;
-  --border: #334155;
-  --navbar-bg: rgba(15, 23, 42, 0.85);
-  --green-light: rgba(76, 175, 80, 0.15);
-  --green-mid: rgba(76, 175, 80, 0.3);
-  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-}
+

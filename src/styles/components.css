@@ -59,14 +59,8 @@
 .modal-footer { display: flex; justify-content: flex-end; gap: var(--sp-3); }
 
 /* ============================================================
-   THEME TOGGLE & MOBILE DRAWER
+   MOBILE DRAWER
    ============================================================ */
-.theme-toggle-btn {
-  width: 40px; height: 40px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  color: var(--text-head); background-color: transparent; transition: var(--transition-fast); cursor: pointer;
-}
-.theme-toggle-btn:hover { background-color: var(--bg-alt); color: var(--green); }
 
 .mobile-drawer-overlay {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
