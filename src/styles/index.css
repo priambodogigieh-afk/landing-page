@@ -198,17 +198,13 @@ button {
   top: 0;
   z-index: 100;
   width: 100%;
-  max-width: 1440px;
   height: 84px;
-  opacity: 1;
-  transform: rotate(0deg);
   background: var(--navbar-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
   transition: background 0.3s ease;
-  margin: 0 auto;
 }
 
 .nav-container {
