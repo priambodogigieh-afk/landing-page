@@ -5,7 +5,6 @@ export default function Hero() {
     <section className="hero-section" id="home">
       <div className="hero-container">
         <div className="hero-content">
-          <span className="hero-eyebrow">Welcome to Nexcent</span>
           <h1 className="hero-title">
             Lessons and insights{' '}
             <span className="text-green">from 8 years</span>
