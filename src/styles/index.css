@@ -226,13 +226,32 @@ button { cursor: pointer; background: none; border: none; outline: none; }
 .community-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-6); margin-top: var(--sp-8); }
 .community-card { padding: var(--sp-7) var(--sp-6); text-align: center; }
 .card-icon {
-  width: 80px; height: 80px; background: var(--green-light); border-radius: 50%;
+  position: relative;
+  width: 68px; height: 54px;
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto var(--sp-5);
   flex-shrink: 0;
 }
+.card-icon::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  width: 50px;
+  height: 49px;
+  background: var(--green-light);
+  border-radius: 18px 5px 18px 18px;
+  z-index: 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.card:hover .card-icon::before {
+  transform: scale(1.06);
+  background-color: rgba(76, 175, 80, 0.22);
+}
 .community-icon-img {
-  width: 44px; height: 44px; object-fit: contain; display: block;
+  position: relative;
+  z-index: 1;
+  width: 48px; height: 48px; object-fit: contain; display: block;
 }
 .community-card h3 { font-size: 17px; font-weight: 700; color: var(--text-head); margin-bottom: var(--sp-3); }
 .community-card p { font-size: 14px; color: var(--text); line-height: 1.7; }

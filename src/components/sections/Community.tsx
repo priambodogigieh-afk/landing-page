@@ -4,17 +4,17 @@ import { Feature } from '../../types';
 export default function Community() {
   const features: Feature[] = [
     {
-      icon: <img src="/Icon.png" alt="" className="community-icon-img" aria-hidden="true" />,
+      icon: <img src="/3 orang.svg" alt="" className="community-icon-img" aria-hidden="true" />,
       title: 'Membership Organisations',
       desc: 'Our membership management software provides full automation of membership renewals and payments',
     },
     {
-      icon: <img src="/Icon%20(1).png" alt="" className="community-icon-img" aria-hidden="true" />,
+      icon: <img src="/gedung.svg" alt="" className="community-icon-img" aria-hidden="true" />,
       title: 'National Associations',
       desc: 'Our membership management software provides full automation of membership renewals and payments',
     },
     {
-      icon: <img src="/Icon%20(2).png" alt="" className="community-icon-img" aria-hidden="true" />,
+      icon: <img src="/tangan.svg" alt="" className="community-icon-img" aria-hidden="true" />,
       title: 'Clubs And Groups',
       desc: 'Our membership management software provides full automation of membership renewals and payments',
     },

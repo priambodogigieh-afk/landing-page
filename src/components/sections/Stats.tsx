@@ -3,7 +3,7 @@ import { Stat } from '../../types';
 export default function Stats() {
   const stats: Stat[] = [
     { value: '2,245,341', label: 'Members', icon: '/member.svg' },
-    { value: '46,328', label: 'Clubs', icon: '/club.svg' },
+    { value: '46,328', label: 'Clubs', icon: '/tangan.svg' },
     { value: '828,867', label: 'Event Bookings', icon: '/event.svg' },
     { value: '1,926,436', label: 'Payments', icon: '/payment%20copy.svg' },
   ];
