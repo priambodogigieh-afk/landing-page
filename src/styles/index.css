@@ -287,9 +287,11 @@ button {
 }
 
 .btn-login {
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-head);
+  line-height: 20px;
+  color: var(--green);
   padding: var(--sp-2) var(--sp-4);
   border-radius: var(--radius-sm);
   transition: color .2s;
@@ -298,7 +300,7 @@ button {
 }
 
 .btn-login:hover {
-  color: var(--green);
+  color: var(--green-dark);
 }
 
 .btn-signup {
