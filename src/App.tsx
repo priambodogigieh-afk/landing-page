@@ -33,7 +33,7 @@ export default function App() {
             imageAlt="Two people presenting a mobile login form"
             ctaText="Learn More"
             ctaHref="#learn"
-            bgLight={true}
+            bgLight={false}
           />
 
           <Stats />
