@@ -13,7 +13,6 @@ export default function Clients() {
     <section className="clients-section" id="service">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">Trusted worldwide</span>
           <h2 className="section-title">Our Clients</h2>
           <p className="section-sub">We have been working with some Fortune 500+ clients</p>
         </div>

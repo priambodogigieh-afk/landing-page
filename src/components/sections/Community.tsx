@@ -24,8 +24,7 @@ export default function Community() {
     <section className="community-section" id="feature">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">Why Nexcent</span>
-          <h2 className="section-title">Manage your entire community<br />in a single system</h2>
+          <h2 className="section-title">Manage your entire community in a single system</h2>
           <p className="section-sub">Who is Nexcent suitable for?</p>
         </div>
         <div className="community-grid">

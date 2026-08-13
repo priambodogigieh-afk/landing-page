@@ -1,7 +1,7 @@
 import Button from '../ui/Button';
 
 export interface FeatureHighlightProps {
-  tag: string;
+  tag?: string;
   title: string;
   description: string;
   imageSrc: string;
@@ -29,9 +29,11 @@ export default function FeatureHighlight({
           />
         </div>
         <div className="feature-text">
-          <span className="feature-tag">{tag}</span>
-          <h2>{title}</h2>
-          <p>{description}</p>
+          {tag && <span className="feature-tag">{tag}</span>}
+          <div className="feature-info-block">
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </div>
           <Button variant="primary" as="a" href={ctaHref}>{ctaText}</Button>
         </div>
       </div>

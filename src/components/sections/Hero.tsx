@@ -20,8 +20,8 @@ export default function Hero() {
             src="/Illustration.svg"
             alt="Developer working at a monitor with flowchart and code"
             className="hero-svg float-illustration"
-            width="580"
-            height="480"
+            width="391"
+            height="407"
           />
         </div>
       </div>
