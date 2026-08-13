@@ -35,8 +35,7 @@ body {
 }
 
 main {
-  width: 1440px;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -45,8 +44,7 @@ main {
 }
 
 .body-sections {
-  width: 1440px;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -338,7 +336,7 @@ button {
    HERO
    ============================================================ */
 .hero-section {
-  width: 1440px;
+  width: 100%;
   height: 599px;
   background: #F5F7FA;
   padding: 96px 144px;
@@ -524,7 +522,7 @@ button {
    CLIENTS
    ============================================================ */
 .clients-section {
-  width: 1440px;
+  width: 100%;
   height: 190px;
   background: var(--bg);
   display: flex;
@@ -794,8 +792,7 @@ button {
 }
 
 .feature-highlight.bg-light {
-  width: 1440px;
-  max-width: 100%;
+  width: 100%;
   height: 433px;
   background: var(--bg-alt);
   transform: rotate(0deg);
@@ -803,8 +800,7 @@ button {
 }
 
 .feature-highlight:not(.bg-light) {
-  width: 1440px;
-  max-width: 100%;
+  width: 100%;
   height: 433.399px;
   transform: rotate(0deg);
   opacity: 1;
@@ -966,8 +962,7 @@ button {
    STATS
    ============================================================ */
 .stats-section {
-  width: 1440px;
-  max-width: 100%;
+  width: 100%;
   height: 288px;
   background: #F5F7FA;
   display: flex;
@@ -1121,8 +1116,7 @@ button {
    TESTIMONIAL
    ============================================================ */
 .testimonial-section {
-  width: 1440px;
-  max-width: 100%;
+  width: 100%;
   min-height: 390px;
   height: auto;
   background: #F5F7FA;
