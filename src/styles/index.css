@@ -1362,24 +1362,24 @@ button {
    CTA
    ============================================================ */
 .cta-section {
-  height: 300px;
+  padding: 96px 0;
   background: var(--bg-alt);
   text-align: center;
   border-top: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
 }
 
 .cta-title {
-  font-size: 36px;
-  font-weight: 800;
-  color: var(--text-head);
-  max-width: 580px;
-  margin: 0 auto var(--sp-5);
-  line-height: 1.2;
-  letter-spacing: -.5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  color: #263238;
+  max-width: 887px;
+  margin: 0 auto 32px;
+  line-height: 76px;
+  letter-spacing: 0;
 }
 
 /* ============================================================
@@ -1714,6 +1714,7 @@ button {
   /* CTA */
   .cta-title {
     font-size: 32px;
+    line-height: 40px;
   }
 
   .cta-section {
@@ -1929,6 +1930,7 @@ button {
   /* CTA */
   .cta-title {
     font-size: 24px;
+    line-height: 32px;
   }
 
   .cta-section {
