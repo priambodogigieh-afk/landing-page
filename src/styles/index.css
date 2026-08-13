@@ -1238,22 +1238,24 @@ button {
    BLOG
    ============================================================ */
 .blog-section {
-  height: 444px;
+  min-height: 506px;
+  height: auto;
   background: var(--bg);
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 96px 0;
 }
 
 .blog-section .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  gap: 16px;
+  height: auto;
 }
 
 .blog-section .section-header {
-  margin-bottom: var(--sp-4);
+  margin-bottom: 0;
 }
 
 .blog-section .section-header .section-title {
