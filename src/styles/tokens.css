@@ -15,9 +15,9 @@
   --border: #E5E7EB;
 
   --navbar-bg: rgba(255, 255, 255, 0.85);
-  --footer-bg: #1C2B36;
-  --footer-text: #94A3B8;
-  --footer-border: #263445;
+  --footer-bg: #263238;
+  --footer-text: #F5F7FA;
+  --footer-border: #3C484E;
 
   --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
