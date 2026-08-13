@@ -1239,12 +1239,15 @@ button {
    BLOG
    ============================================================ */
 .blog-section {
-  min-height: 506px;
-  height: auto;
+  width: 100%;
+  height: 506px;
   background: var(--bg);
   display: flex;
   align-items: center;
-  padding: 96px 0;
+  justify-content: center;
+  transform: rotate(0deg);
+  opacity: 1;
+  padding: 0;
 }
 
 .blog-section .container {
@@ -1970,6 +1973,7 @@ button {
 
   /* Blog */
   .blog-section {
+    height: auto;
     padding: 64px 0;
   }
 
