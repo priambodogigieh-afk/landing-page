@@ -11,8 +11,8 @@ export default function Footer() {
         <div className="footer-container">
           <div className="footer-brand">
             <div className="nav-logo">
-              <img src="/image.png" alt="Nexcent Logo" className="logo-icon" />
-              <span className="logo-text white">Nexcent</span>
+              <img src="/Icon nextcent.svg" alt="Nexcent Logo" className="logo-icon" />
+              <img src="/Nexcent.svg" alt="Nexcent" className="logo-text-svg footer-logo-text" />
             </div>
             <p className="footer-desc">
               Copyright &copy; 2020 Nexcent ltd.<br />All rights reserved
