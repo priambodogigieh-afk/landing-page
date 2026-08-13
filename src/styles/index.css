@@ -237,6 +237,13 @@ button {
   letter-spacing: -.4px;
 }
 
+.logo-text-svg {
+  width: 111.49040985107422px;
+  height: 20.66193389892578px;
+  object-fit: contain;
+  opacity: 1;
+}
+
 .logo-text.white {
   color: #fff;
 }

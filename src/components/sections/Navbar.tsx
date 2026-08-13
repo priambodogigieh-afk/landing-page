@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="nav-container">
           <a href="#home" className="nav-logo" aria-label="Nexcent Home">
             <img src="/image.png" alt="Nexcent Logo" className="logo-icon" />
-            <span className="logo-text">Nexcent</span>
+            <img src="/Nexcent.svg" alt="Nexcent" className="logo-text-svg" />
           </a>
           <nav className="nav-links" aria-label="Desktop navigation">
             {navLinks.map((link) => <a key={link.label} href={link.href}>{link.label}</a>)}
@@ -45,13 +45,13 @@ export default function Navbar() {
           </button>
         </div>
       </header>
-
+ 
       <div className={`mobile-drawer-overlay ${isOpen ? 'open' : ''}`} onClick={close} data-testid="mobile-drawer-overlay">
         <div className="mobile-drawer" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label="Mobile navigation menu">
           <div className="mobile-drawer-header">
             <div className="nav-logo">
               <img src="/image.png" alt="Nexcent Logo" className="logo-icon" />
-              <span className="logo-text">Nexcent</span>
+              <img src="/Nexcent.svg" alt="Nexcent" className="logo-text-svg" />
             </div>
           </div>
           <nav className="mobile-drawer-links" aria-label="Mobile navigation">
