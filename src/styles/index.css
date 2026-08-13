@@ -1197,16 +1197,13 @@ button {
 .brand-logos {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--sp-2);
-  flex-wrap: nowrap;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .brand-logo-img {
-  flex: 1;
   height: 32px;
   width: auto;
-  max-width: 110px;
   object-fit: contain;
   filter: brightness(0);
   opacity: .75;
@@ -1219,16 +1216,18 @@ button {
 
 .meet-clients {
   color: var(--green);
-  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
   font-weight: 600;
-  margin-left: auto;
+  line-height: 28px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
+  text-decoration: none;
 }
 
 .meet-clients:hover {
-  text-decoration: underline;
+  color: var(--green-dark);
 }
 
 /* ============================================================
