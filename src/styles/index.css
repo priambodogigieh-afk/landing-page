@@ -273,6 +273,19 @@ button {
   flex: 1;
 }
 
+.navbar .nav-links {
+  position: absolute;
+  top: 30px;
+  left: 425.5px;
+  width: 588px;
+  height: 24px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
 .nav-links a {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
