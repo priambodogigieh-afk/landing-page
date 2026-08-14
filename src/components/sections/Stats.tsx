@@ -19,11 +19,11 @@ function AnimatedCounter({ value, start }: AnimatedCounterProps) {
     const animate = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
-      
+
       // Ease-out quad formula
       const easeProgress = progress * (2 - progress);
       const currentCount = Math.floor(easeProgress * target);
-      
+
       setCount(currentCount);
 
       if (progress < 1) {
@@ -67,10 +67,11 @@ export default function Stats() {
 
   const stats: Stat[] = [
     { value: '2,245,341', label: 'Members', icon: '/member.svg' },
-    { value: '46,328', label: 'Clubs', icon: '/Icon (3).png' },
+    { value: '46,328', label: 'Clubs', icon: '/tangan.svg' },
     { value: '828,867', label: 'Event Bookings', icon: '/event.svg' },
     { value: '1,926,436', label: 'Payments', icon: '/payment%20copy.svg' },
   ];
+
 
   return (
     <section className="stats-section" ref={sectionRef}>
