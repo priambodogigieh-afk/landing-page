@@ -218,19 +218,30 @@ button {
   display: flex;
   align-items: center;
   gap: 43.85px;
+  position: relative;
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: var(--sp-2);
+  gap: 8px;
   flex-shrink: 0;
   text-decoration: none;
 }
 
+.navbar .nav-logo {
+  position: absolute;
+  top: 30px;
+  left: 105px;
+  height: 24px;
+  width: 154.49041748046875px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
 .logo-icon {
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -1659,6 +1670,12 @@ button {
   .nav-container {
     gap: 0;
     padding: 0 24px;
+  }
+
+  .navbar .nav-logo {
+    position: static;
+    width: auto;
+    height: auto;
   }
 
   /* Hero */
