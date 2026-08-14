@@ -1,15 +1,40 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import useMobileMenu from '../../hooks/useMobileMenu';
 import Button from '../ui/Button';
 
 export default function Navbar() {
   const { isOpen, toggle, close } = useMobileMenu();
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleResize = () => { if (window.innerWidth > 960 && isOpen) close(); };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [isOpen, close]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home', 'service', 'feature', 'product', 'testimonial', 'faq'];
+      const scrollPosition = window.scrollY + 120; // offset for navbar height + buffer
+
+      for (const section of sections) {
+        const el = document.getElementById(section);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    // Trigger scroll handler once initially to set the correct active state on mount
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { label: 'Home', href: '#home' },
@@ -29,7 +54,19 @@ export default function Navbar() {
             <img src="/Nexcent.svg" alt="Nexcent" className="logo-text-svg" />
           </a>
           <nav className="nav-links" aria-label="Desktop navigation">
-            {navLinks.map((link) => <a key={link.label} href={link.href}>{link.label}</a>)}
+            {navLinks.map((link) => {
+              const sectionId = link.href.replace('#', '');
+              const isActive = activeSection === sectionId;
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className={isActive ? 'active' : ''}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
           </nav>
           <div className="nav-actions">
             <Button variant="ghost" as="a" href="#login" className="btn-login">Login</Button>
@@ -55,7 +92,20 @@ export default function Navbar() {
             </div>
           </div>
           <nav className="mobile-drawer-links" aria-label="Mobile navigation">
-            {navLinks.map((link) => <a key={link.label} href={link.href} onClick={close}>{link.label}</a>)}
+            {navLinks.map((link) => {
+              const sectionId = link.href.replace('#', '');
+              const isActive = activeSection === sectionId;
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className={isActive ? 'active' : ''}
+                  onClick={close}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
           </nav>
           <div className="mobile-drawer-actions">
             <Button variant="outline" as="a" href="#login" onClick={close}>Login</Button>
