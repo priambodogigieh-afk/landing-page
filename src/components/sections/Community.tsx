@@ -1,4 +1,4 @@
-import Card from '../ui/Card';
+import ScrollAnimate from '../ui/ScrollAnimate';
 import { Feature } from '../../types';
 
 export default function Community() {
@@ -28,12 +28,16 @@ export default function Community() {
           <p className="section-sub">Who is Nexcent suitable for?</p>
         </div>
         <div className="community-grid">
-          {features.map((f) => (
-            <Card key={f.title} className="community-card" interactive={true}>
+          {features.map((f, index) => (
+            <ScrollAnimate
+              key={f.title}
+              className="card card-interactive community-card"
+              delayClass={`delay-${index + 1}`}
+            >
               <div className="card-icon">{f.icon}</div>
               <h3>{f.title}</h3>
               <p>{f.desc}</p>
-            </Card>
+            </ScrollAnimate>
           ))}
         </div>
       </div>

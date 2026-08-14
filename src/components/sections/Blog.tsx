@@ -1,3 +1,4 @@
+import ScrollAnimate from '../ui/ScrollAnimate';
 import Button from '../ui/Button';
 import { Post } from '../../types';
 
@@ -29,14 +30,19 @@ export default function Blog() {
           </p>
         </div>
         <div className="blog-grid">
-          {posts.map((post) => (
-            <article key={post.title} className="blog-card">
+          {posts.map((post, index) => (
+            <ScrollAnimate
+              as="article"
+              key={post.title}
+              className="blog-card"
+              delayClass={`delay-${index + 1}`}
+            >
               <img src={post.img} alt={post.alt} className="blog-card-bg" loading="lazy" />
               <div className="blog-card-overlay">
                 <h3>{post.title}</h3>
                 <Button variant="text" as="a" href="#read">Readmore →</Button>
               </div>
-            </article>
+            </ScrollAnimate>
           ))}
         </div>
       </div>

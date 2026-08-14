@@ -1707,6 +1707,7 @@ button {
     margin-top: 24px;
     width: auto;
     height: auto;
+    transform: none;
   }
 
   /* Clients */
@@ -1927,8 +1928,10 @@ button {
   }
 
   .stat-card {
+    width: max-content;
     max-width: 100%;
     height: auto;
+    justify-self: center;
   }
 
   .stat-info,
@@ -2362,3 +2365,25 @@ button {
     font-size: 20px;
   }
 }
+
+/* ============================================================
+   SCROLL ANIMATIONS
+   ============================================================ */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }
+.delay-4 { transition-delay: 400ms; }
+.delay-5 { transition-delay: 500ms; }

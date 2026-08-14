@@ -1,3 +1,4 @@
+import ScrollAnimate from '../ui/ScrollAnimate';
 import Button from '../ui/Button';
 
 export interface FeatureHighlightProps {
@@ -20,22 +21,22 @@ export default function FeatureHighlight({
   return (
     <section id={id} className={`feature-highlight${bgLight ? ' bg-light' : ''}`}>
       <div className={`feature-container${reverse ? ' reverse' : ''}`}>
-        <div className="feature-image">
+        <ScrollAnimate className="feature-image">
           <img
             src={imageSrc}
             alt={imageAlt}
             className={reverse ? 'feature2-svg' : 'feature1-svg'}
             loading="lazy"
           />
-        </div>
-        <div className="feature-text">
+        </ScrollAnimate>
+        <ScrollAnimate className="feature-text" delayClass="delay-2">
           {tag && <span className="feature-tag">{tag}</span>}
           <div className="feature-info-block">
             <h2>{title}</h2>
             <p>{description}</p>
           </div>
           <Button variant="primary" as="a" href={ctaHref}>{ctaText}</Button>
-        </div>
+        </ScrollAnimate>
       </div>
     </section>
   );

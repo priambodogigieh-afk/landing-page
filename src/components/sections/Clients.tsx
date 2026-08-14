@@ -1,3 +1,4 @@
+import ScrollAnimate from '../ui/ScrollAnimate';
 import { Client } from '../../types';
 
 export default function Clients() {
@@ -17,15 +18,19 @@ export default function Clients() {
           <p className="section-sub">We have been working with some Fortune 500+ clients</p>
         </div>
         <div className="clients-logos">
-          {clients.map((c) => (
-            <div key={c.name} className="client-logo" title={c.name}>
+          {clients.map((c, index) => (
+            <ScrollAnimate
+              key={c.name}
+              delayClass={`delay-${(index % 5) + 1}`}
+              className="client-logo"
+            >
               <img
                 src={c.file}
                 alt={`${c.name} brand logo`}
                 className={`client-logo-img logo-${c.name.toLowerCase()}`}
                 loading="lazy"
               />
-            </div>
+            </ScrollAnimate>
           ))}
         </div>
       </div>
